@@ -5,6 +5,8 @@ Provides a modern visual dashboard interacting with the Supervisor backend.
 
 import streamlit as st
 import json
+import streamlit as st
+import json
 import os
 import io
 import sys
@@ -12,7 +14,26 @@ from datetime import datetime
 
 # Import backend classes
 from supervisor import Supervisor
-from main import setup_sandbox
+
+def setup_sandbox():
+    """Create required directories and dummy files inside the sandbox."""
+    os.makedirs("workspace/temp", exist_ok=True)
+    os.makedirs("workspace/logs", exist_ok=True)
+    os.makedirs("system", exist_ok=True)  # simulated protected area
+
+    # Dummy files
+    if not os.path.exists("workspace/temp/file.tmp"):
+        with open("workspace/temp/file.tmp", 'w') as f:
+            f.write("Temporary file content.\n")
+
+    if not os.path.exists("workspace/log.txt"):
+        with open("workspace/log.txt", 'w') as f:
+            f.write("This is a log file.\n")
+
+    # Create a dummy system file to demonstrate blocking (but not used by executor)
+    if not os.path.exists("system/config"):
+        with open("system/config", 'w') as f:
+            f.write("[mock system config]\n")
 
 # Configure page settings
 st.set_page_config(
