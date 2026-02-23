@@ -5,8 +5,6 @@ Provides a modern visual dashboard interacting with the Supervisor backend.
 
 import streamlit as st
 import json
-import streamlit as st
-import json
 import os
 import io
 import sys
