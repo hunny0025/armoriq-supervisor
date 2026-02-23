@@ -1,0 +1,21 @@
+{
+    "agents": {
+        "CleanerAgent": {
+            "allowed_actions": [
+                "delete"
+            ],
+            "allowed_paths": [
+                "workspace/temp"
+            ]
+        },
+        "OrganizerAgent": {
+            "allowed_actions": [
+                "create",
+                "move"
+            ],
+            "allowed_paths": [
+                "workspace"
+            ]
+        }
+    }
+}

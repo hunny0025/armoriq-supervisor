@@ -1,0 +1,347 @@
+[
+  {
+    "timestamp": "2026-02-23T21:18:52.477105",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "workspace/temp"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:18:52.497445",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "details": {
+      "agent": "OrganizerAgent",
+      "action": "move",
+      "source": "workspace/log.txt",
+      "dest": "workspace/logs/log.txt"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:18:52.515474",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "workspace/temp/file.tmp"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:18:52.522388",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "details": {
+      "agent": "OrganizerAgent",
+      "action": "move",
+      "source": "workspace/log.txt",
+      "dest": "workspace/logs/log.txt"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:18:52.528409",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "system/config"
+    },
+    "risk": "HIGH",
+    "decision": "BLOCKED",
+    "reason": "Policy violation: Path 'system/config' is outside allowed scope: ['workspace/temp']"
+  },
+  {
+    "timestamp": "2026-02-23T21:43:00.688446",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "workspace/temp"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:43:00.696703",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "details": {
+      "agent": "OrganizerAgent",
+      "action": "move",
+      "source": "workspace/log.txt",
+      "dest": "workspace/logs/log.txt"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:43:00.713361",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "workspace/temp/file.tmp"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:43:00.720699",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "details": {
+      "agent": "OrganizerAgent",
+      "action": "move",
+      "source": "workspace/log.txt",
+      "dest": "workspace/logs/log.txt"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:43:00.727011",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "system/config"
+    },
+    "risk": "HIGH",
+    "decision": "BLOCKED",
+    "reason": "Policy violation: Path 'system/config' is outside allowed scope: ['workspace/temp']"
+  },
+  {
+    "timestamp": "2026-02-23T21:45:08.492705",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "workspace/temp"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:45:17.442473",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "details": {
+      "agent": "OrganizerAgent",
+      "action": "move",
+      "source": "workspace/log.txt",
+      "dest": "workspace/logs/log.txt"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:45:41.912004",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "workspace/temp/file.tmp"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:45:41.918227",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "details": {
+      "agent": "OrganizerAgent",
+      "action": "move",
+      "source": "workspace/log.txt",
+      "dest": "workspace/logs/log.txt"
+    },
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:46:05.135096",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "details": {
+      "agent": "CleanerAgent",
+      "action": "delete",
+      "path": "system/config"
+    },
+    "risk": "HIGH",
+    "decision": "BLOCKED",
+    "reason": "Policy violation: Path 'system/config' is outside allowed scope: ['workspace/temp']"
+  },
+  {
+    "timestamp": "2026-02-23T21:51:05.685581",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "workspace/temp",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:51:05.697034",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "path": "workspace/log.txt -> workspace/logs/log.txt",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:51:05.706808",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "workspace/temp/file.tmp",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:51:05.708908",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "path": "workspace/log.txt -> workspace/logs/log.txt",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:51:05.715691",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "system/config",
+    "risk": "HIGH",
+    "decision": "BLOCKED",
+    "reason": "Policy violation: Path 'system/config' is outside allowed scope: ['workspace/temp']"
+  },
+  {
+    "timestamp": "2026-02-23T21:52:22.491030",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "workspace/temp",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:52:38.318689",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "path": "workspace/log.txt -> workspace/logs/log.txt",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:52:51.863272",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "workspace/temp/file.tmp",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:52:51.870641",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "path": "workspace/log.txt -> workspace/logs/log.txt",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:53:04.033955",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "system/config",
+    "risk": "HIGH",
+    "decision": "BLOCKED",
+    "reason": "Policy violation: Path 'system/config' is outside allowed scope: ['workspace/temp']"
+  },
+  {
+    "timestamp": "2026-02-23T21:58:08.573047",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "workspace/temp",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:58:08.597019",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "path": "workspace/log.txt -> workspace/logs/log.txt",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:58:08.612462",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "workspace/temp/file.tmp",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:58:08.621188",
+    "agent": "OrganizerAgent",
+    "action": "move",
+    "path": "workspace/log.txt -> workspace/logs/log.txt",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  },
+  {
+    "timestamp": "2026-02-23T21:58:08.630057",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "system/config",
+    "risk": "HIGH",
+    "decision": "BLOCKED",
+    "reason": "Policy violation: Path 'system/config' is outside allowed scope: ['workspace/temp']"
+  },
+  {
+    "timestamp": "2026-02-23T22:00:30.199397",
+    "agent": "CleanerAgent",
+    "action": "delete",
+    "path": "workspace/temp",
+    "risk": "MEDIUM",
+    "decision": "ALLOWED",
+    "reason": "Policy allowed, risk MEDIUM"
+  }
+]
