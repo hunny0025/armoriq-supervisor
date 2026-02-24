@@ -1,22 +1,3 @@
 [
-  {
-    "timestamp": "2026-02-24T11:38:22.162426",
-    "command": "organize files",
-    "agent": "OrganizerAgent",
-    "action": "move",
-    "path": "workspace/log.txt -> workspace/logs/log.txt",
-    "risk": "MEDIUM",
-    "decision": "ALLOWED",
-    "reason": "Policy allowed, risk MEDIUM"
-  },
-  {
-    "timestamp": "2026-02-24T11:49:55.169249",
-    "command": "organize files",
-    "agent": "OrganizerAgent",
-    "action": "move",
-    "path": "workspace/log.txt -> workspace/logs/log.txt",
-    "risk": "MEDIUM",
-    "decision": "ALLOWED",
-    "reason": "Policy allowed, risk MEDIUM"
-  }
+
 ]
