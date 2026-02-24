@@ -1,11 +1,12 @@
 """
 History Manager: stores and retrieves decision history in history.json.
-Now stores explicit path field.
+Stores command, agent, action, path, risk, decision, reason, timestamp.
 """
 
 import json
 import os
 from datetime import datetime
+
 
 class HistoryManager:
     def __init__(self, history_file="history.json"):
@@ -17,7 +18,7 @@ class HistoryManager:
             try:
                 with open(self.history_file, 'r') as f:
                     return json.load(f)
-            except:
+            except Exception:
                 return []
         return []
 
@@ -25,10 +26,12 @@ class HistoryManager:
         with open(self.history_file, 'w') as f:
             json.dump(self.history, f, indent=2)
 
-    def add_entry(self, agent: str, action_type: str, path: str, risk: str, decision: str, reason: str):
-        """Add a history entry with all relevant fields."""
+    def add_entry(self, command: str, agent: str, action_type: str, path: str,
+                  risk: str, decision: str, reason: str):
+        """Add a history entry with all observability fields."""
         entry = {
             "timestamp": datetime.now().isoformat(),
+            "command": command,
             "agent": agent,
             "action": action_type,
             "path": path,
@@ -39,35 +42,38 @@ class HistoryManager:
         self.history.append(entry)
         self._save()
 
+    def get_all(self) -> list:
+        """Return all history entries (newest first)."""
+        return list(reversed(self.history))
+
     def show_history(self):
-        """Print history to console safely using get() for backward compatibility."""
+        """Print history to console with backward-compatible field access."""
         if not self.history:
             print("No history available.")
             return
         print("\n--- Execution History ---")
         for idx, entry in enumerate(self.history, 1):
             timestamp = entry.get("timestamp", "N/A")
-            agent = entry.get("agent", "N/A")
-            action = entry.get("action", "N/A")
-            
-            # For backward compatibility, check if path exists directly vs inside details
+            command   = entry.get("command",   entry.get("action", "N/A"))
+            agent     = entry.get("agent",     "N/A")
+            action    = entry.get("action",    "N/A")
+            risk      = entry.get("risk",      "N/A")
+            decision  = entry.get("decision",  "N/A")
+
+            # Backward compatibility: path may live under old 'details' key
             path = entry.get("path")
             if path is None:
-                # Fall back to checking old "details" structure
                 details = entry.get("details", {})
-                act_type = details.get("action")
-                if act_type in ("delete", "create"):
+                act     = details.get("action")
+                if act in ("delete", "create"):
                     path = details.get("path", "N/A")
-                elif act_type == "move":
+                elif act == "move":
                     src = details.get("source", "N/A")
-                    dst = details.get("dest", "N/A")
+                    dst = details.get("dest",   "N/A")
                     path = f"{src} -> {dst}"
                 else:
                     path = "N/A"
 
-            risk = entry.get("risk", "N/A")
-            decision = entry.get("decision", "N/A")
-            
-            print(f"{idx}. [{timestamp}] | Agent: {agent} | Action: {action} | "
-                  f"Path: {path} | Risk: {risk} | Decision: {decision}")
+            print(f"{idx}. [{timestamp}] | Cmd: {command} | Agent: {agent} | "
+                  f"Action: {action} | Path: {path} | Risk: {risk} | Decision: {decision}")
         print()

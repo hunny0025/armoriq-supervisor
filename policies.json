@@ -16,6 +16,14 @@
             "allowed_paths": [
                 "workspace"
             ]
+        },
+        "MonitorAgent": {
+            "allowed_actions": [
+                "read"
+            ],
+            "allowed_paths": [
+                "workspace"
+            ]
         }
     }
 }
