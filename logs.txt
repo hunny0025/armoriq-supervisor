@@ -1,0 +1,3 @@
+2026-02-24 11:38:22,156 - INFO - Agent: OrganizerAgent | Action: move | Path: src=workspace/log.txt, dst=workspace/logs/log.txt | Risk: MEDIUM | Decision: ALLOWED | Reason: Policy allowed, risk MEDIUM
+2026-02-24 11:49:55,169 - INFO - Agent: OrganizerAgent | Action: move | Path: src=workspace/log.txt, dst=workspace/logs/log.txt | Risk: MEDIUM | Decision: ALLOWED | Reason: Policy allowed, risk MEDIUM
+2026-02-24 11:49:55,169 - ERROR - Execution failed: Source not found: workspace/log.txt (safe handling)
